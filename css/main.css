@@ -1,0 +1,344 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+html, body { height: 100%; }
+
+body {
+  background: linear-gradient(to right, #01060b, #132c4b);
+  font: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Color Blocks
+/*
+/*****************************************************************************/
+
+.top{
+  width: 100%;
+  height: 110px;
+  background-color: #d54c18;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.strip {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: -1;
+}
+
+.white {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 22px #999;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 0 auto 2em;
+  line-height: 1.5em;
+}
+
+.site .header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site .header h1.title {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.site .header h1.title a {
+  color: #132c4b;
+}
+
+.site .header h1.title a:hover {
+  color: #000;
+}
+
+.site .header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.site .header a.extra:hover {
+  color: #000;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+.site .footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.site .footer a{
+  color: white;
+}
+
+.site .footer .contact {
+  float: right;
+  margin-right: 40px;
+}
+
+.site .footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.site .footer .rss img {
+  border: 0;
+}
+
+.about-me{
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.about-me h2{
+  color: #132c4b;
+}
+
+.about-me img{
+  height: 150px;
+  width: 150px;
+  float:right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px
+}
+
+.about-me p{
+  font-size: 16px;
+}
+
+.index{
+  color: white;
+}
+
+.menu{
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.menu li{
+  display: inline;
+  float: left;
+  margin-right: 25px;
+  font-size: 24px;
+  padding-right: 15px;
+  border-right: 1px solid white;
+}
+
+/*****************************************************************************/
+/*
+/* Resume
+/*
+/*****************************************************************************/
+
+.personal {
+  width: 720px;
+  margin: auto;
+}
+
+.personal .contact{
+  float: right;
+  font-size: 16px;
+}
+
+.personal .name {
+  float: left;
+  text-shadow: 1px 2px gray;
+}
+
+.personal .name h1{
+  margin-bottom: 0;
+}
+
+.personal .name h2{
+  margin-top: 0;
+}
+
+.personal .contact ul{
+  margin-top: 15px;
+}
+
+.personal .contact ul li{
+  display: inline;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.page .resume{
+  width: 720px;
+  position: absolute;
+  top: 129px;
+  left: 190px;
+}
+
+.skills{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-bottom: 5px;
+  box-shadow: -15px 22px #999;
+}
+
+.experience{
+  background-color: white;
+  color: black;
+  padding-bottom: 5px;
+  box-shadow: -15px 22px #999;
+}
+
+.experience h1{
+  text-align: center;
+}
+
+.experience h2{
+  margin-left: 15px;
+}
+
+.education{
+  background-color: white;
+  color: black;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  box-shadow: -15px 22px #999;
+}
+
+.education h1{
+  text-align: center;
+}
+
+/*****************************************************************************/
+/*
+/* Projects
+/*
+/*****************************************************************************/
+
+.projects{
+  margin-left: 100px;
+  text-shadow: -1px 2px gray;
+}
+
+.projects h1{
+  margin-left: 85px;
+}
+
+.project{
+  background-color: white;
+  width: 720px;
+  margin: auto;
+  margin-top: 90px;
+  padding: 10px;
+  padding-top: 0;
+  box-shadow: -15px 22px #999;
+}
+
+.project-name{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.description{
+  position: relative;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
